@@ -20,7 +20,5 @@ import pickle, gzip, math, torch, matplotlib as mpl
 import matplotlib.pyplot as plt
 from torch import tensor
 
-MNIST_URL='http://deeplearning.net/data/mnist/mnist.pkl'
-
 def near(a,b): return torch.allclose(a, b, rtol=1e-3, atol=1e-5)
 def test_near(a,b): test(a,b,near)
